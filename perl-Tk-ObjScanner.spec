@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Tk data or object scanner
@@ -14,6 +14,7 @@ BuildRequires: perl(Tk)
 BuildRequires: perl(Tk::Adjuster)
 BuildRequires: perl(Tk::HList)
 BuildRequires: perl(Tk::ROText)
+BuildRequires: x11-server-xvfb
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
@@ -40,7 +41,7 @@ hash/object and insert them in the HList.
 %make
 
 %check
-#make test
+xvfb-run make test
 
 %install
 rm -rf %buildroot
