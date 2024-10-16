@@ -7,7 +7,7 @@ Release:	6
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Tk data or object scanner
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source:		http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
