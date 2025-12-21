@@ -10,6 +10,7 @@ Summary:	Tk data or object scanner
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source:		http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Scalar::Util)
 BuildRequires:	perl(Tk)
