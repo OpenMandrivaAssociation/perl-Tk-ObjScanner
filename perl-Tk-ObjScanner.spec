@@ -1,14 +1,14 @@
 %define upstream_name       Tk-ObjScanner
-%define upstream_version    2.012
+%define upstream_version    2.018
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Version:	%{upstream_version}
+Release:	1
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Tk data or object scanner
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source:		http://www.cpan.org/modules/by-module/Tk/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/dod38fr/perl-tk-objscanner
+Source:		https://cpan.metacpan.org/authors/id/D/DD/DDUMONT/Tk-ObjScanner-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
