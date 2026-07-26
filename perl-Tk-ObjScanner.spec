@@ -1,14 +1,12 @@
 %define upstream_name       Tk-ObjScanner
-%define upstream_version    2.018
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	2.018
+Release:	2
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Tk data or object scanner
 Url:		https://github.com/dod38fr/perl-tk-objscanner
-Source:		https://cpan.metacpan.org/authors/id/D/DD/DDUMONT/Tk-ObjScanner-%{upstream_version}.tar.gz
+Source:		https://cpan.metacpan.org/authors/id/D/DD/DDUMONT/Tk-ObjScanner-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -36,7 +34,7 @@ with the 'caller' parameter. The scanner will retrieve all keys of the
 hash/object and insert them in the HList.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
